@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(rgb(188, 182, 182), rgb(56, 52, 60));
+    width: 940px;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+/* estilo para el titulo de la pagina  */
+h1 {
+    text-align: center;
+    position: relative;
+    margin: 20px auto;
+    padding: 20px 20px;
+}
+/* estilo del "formulario" */
+form {
+    position: relative;
+    width: 940px;
+    margin: 20px auto;
+    padding: 20px 20px;
+}
+/* Estilo para los elementos */
+form label {
+    font-size: 25px;
+    position: left;
+    margin: 20px auto;
+}
+/* Estilo para los contenedores del encriptador y desencriptador*/ 
+.encriptador, .desEncriptador {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+}
+form input[type="text"], form textarea {
+    font-size: 20px;
+    padding: 20px 20px;
+    color: rgb(247, 242, 242);
+    background: rgb(85, 77, 88);
+    opacity: 50%;
+    border-radius: 5px;
+}
+form input[type="text"]:hover, form textarea:hover {
+    background: rgb(85, 77, 88);
+    opacity: 0.7;
+}
+
+#txtUsuario::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+/* Estilo para los botones copiar y pegar texto*/
+form button {
+    clear: both;
+    text-align: center;
+    width: 40%;
+    margin: 10px auto;
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: azure;
+    background: rgb(108, 107, 115);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+form button:hover{
+    background: rgb(46, 52, 21);
+    
+}
+.enviar {
+    width: 40%;
+    margin: 20px auto;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: azure;
+    background: rgb(34, 24, 44);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.botones :hover {
+    background: rgb(45, 31, 25);
+}
+
+/*css del footer*/
+footer {
+    text-align: center;
+}
+.copyRight {
+    color:#fffefe;
+    font-size: 25px;
+    margin: 20px;
+}
+footer a {
+    text-decoration: none;
+}

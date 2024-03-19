@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Encriptador de textos</h1>
+    </header>
+    <main>
+        <form id="formEncriptador"> 
+            <div class="encriptador">
+                <label for="txtUsuario">Ingrese su texto:</label>
+                <textarea id="txtUsuario" class="input-padron" placeholder="Por favor, no use caracteres especiales" cols="35" rows="10" required></textarea>
+                <button type="button" onclick="pegarTexto()">Pegar texto</button>
+            </div>
+
+            <div class="desEncriptador">
+                <label for="txtEncriptado">Texto Encriptado/Desencriptado:</label>
+                <textarea id="txtEncriptado" class="input-padron" cols="35" rows="10" readonly></textarea>
+                <button type="button" onclick="copiarTexto()">Copiar texto</button>
+            </div>
+
+            <div class="botones">
+                <input type="button" value="Cifrar" class="enviar" onclick="cifrarTexto()" onclick="comprobarTxt()">
+                <input type="button" value="Descifrar" class="enviar" onclick="descifrarTexto()">
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <a href="https://www.linkedin.com/in/victor-esteban-gomez-mendez/"><p class="copyRight">&copy Victor Esteban Gomez Mendez - 2024</p></a>
+</footer>
+</html>
